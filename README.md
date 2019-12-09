@@ -1,4 +1,4 @@
-## Steps (for Ubuntu 18.04)
+## Prerequisites (for Ubuntu 18.04)
 
 1. Check node version `nodejs --version`
 
@@ -8,4 +8,12 @@
 
 4. Install MetaMask
 
-5. In this tutorial we use  template from
+5. In this tutorial we use a premade template
+
+6. Check all files in the project `ls -l`
+
+7. Install dependencies `npm install`
+
+8.
+
+
