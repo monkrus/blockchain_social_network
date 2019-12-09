@@ -14,6 +14,10 @@
 
 7. Install dependencies `npm install`
 
-8.
+8. Start the development server `npm run start`
+
+
+
+
 
 
