@@ -9,9 +9,8 @@ require('chai')
 //test code will be written here,
 //callback function contains all the Ganache accounts
 //socialNetwork represents the deployed smart contract
-contract('SocialNetwork', (accounts) => {
- 
- let socialNetwork
+contract('SocialNetwork', ([deployer, author, tipper]) => {
+let socialNetwork
 
 //adding before reduces duplication
  before (async () => {
@@ -38,16 +37,20 @@ assert.equal(name, 'Berlin forever')
 
 describe('posts', async () => {
 
+let result, postCount
+
 it('creates posts' , async() => {	
+result =  await socialNetwork.createPost('This is my first post', {from: author})
+postCount = await socialNetwork.postCount()
+//SUCCESS
+assert.equal(postCount, 1)
 })
 
-it('lists posts' , async() => {		
+it(' lists posts' , async() => {	
 })
 
-
-it('alllows users to tip posts' , async() => {	
-})
+it('allows users to tipper posts' , async() => {	
 
 })
-
-
+})
+})

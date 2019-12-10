@@ -27,7 +27,7 @@
 4. We are using asynchronous pattern
 `contract = await SocialNetwork.deployed()` 
 
-`contract`
+`contract`nodejs --version
 
 `contract.address`
 
@@ -55,7 +55,7 @@
 
 For almost all types, you cannot specify where they should be stored, because they are copied everytime they are used.
 
-4.tbc
+4.
 
 
 
@@ -67,7 +67,7 @@ For almost all types, you cannot specify where they should be stored, because th
 
 
 
-
+tru
 
 
 
