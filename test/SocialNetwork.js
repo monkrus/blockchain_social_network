@@ -13,19 +13,28 @@ contract('SocialNetwork', (accounts) => {
  
  let socialNetwork
 
+
+ before (async () => {
+ //we check the deployment of the SocilaNetwork
+	socialNetwork = await SocialNetwork.deployed()
+})
+
 describe('deployment',async () =>  {
 it ('deploys succesfully', async () => {
-	//we check the deployment of the SocilaNetwork
-	socialNetwork = await SocialNetwork.deployed()
 	//we check the adress of the socialNetwork (as deployed)
 	const address = await socialNetwork.address
 	assert.notEqual(address, 0x0)
 	assert.notEqual(address, '')
 	assert.notEqual(address, null)
 	assert.notEqual(address, undefined)
-
 })
 
-})
+it ('has a name', async() => {
+const name = await socialNetwork.name()
+assert.equal(name, 'Berlin forever')
 
 })
+})
+})
+
+
