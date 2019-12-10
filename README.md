@@ -41,7 +41,21 @@
 
 1. Run `truffle test` .Please read the comments in the SocialNetwork.js file
 
-2.
+2. Without `memory` keyword, Solidity tried to declare var in storage. STRUCURE of the storage cannot be changed by future method calls.CONTENT of the storage can be changed by sendTranaction call. 
+
+3. The Ethereum Virtual Machine has three areas where it can store items.
+
+- The first is “storage”, where all the contract state variables reside. Every contract has   
+  its own storage and it is persistent between function calls and quite expensive to use.
+
+- The second is “memory”, this is used to hold temporary values. It is erased between 
+  (external) function calls and is cheaper to use.
+
+- The third one is the stack, which is used to hold small local variables. It is almost free to use, but can only hold a limited amount of values.
+
+For almost all types, you cannot specify where they should be stored, because they are copied everytime they are used.
+
+4.
 
 
 

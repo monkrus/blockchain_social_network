@@ -35,6 +35,19 @@ assert.equal(name, 'Berlin forever')
 
 })
 })
+
+describe('posts', async () => {
+
+it('creates posts' , async() => {	
+})
+
+it('lists posts' , async() => {		
+})
+
+
+it('alllows users to tip posts' , async() => {	
+})
+
 })
 
 

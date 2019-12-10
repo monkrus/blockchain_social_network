@@ -7,4 +7,9 @@ constructor() public {
 	name = "Berlin forever";
 }
 
+
+function createPost(string memory _content) public {
+	_content;
+}
+
 }
