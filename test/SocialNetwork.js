@@ -13,9 +13,9 @@ contract('SocialNetwork', (accounts) => {
  
  let socialNetwork
 
-
+//adding before reduces duplication
  before (async () => {
- //we check the deployment of the SocilaNetwork
+//we check the deployment of the SocilaNetwork
 	socialNetwork = await SocialNetwork.deployed()
 })
 
