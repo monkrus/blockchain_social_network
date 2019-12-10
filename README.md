@@ -16,6 +16,38 @@
 
 8. Start the development server `npm run start`
 
+## Steps
+
+1. Compile with `truffle compile` (after writing a basic smart contract)
+
+2. Migrate with `truffle migrate` (after writing a migration file)
+
+3. Interact with the console (JS runtime environment)by typing `truffle console`
+
+4. We are using asynchronous pattern
+`contract = await SocialNetwork.deployed()` 
+
+`contract`
+
+`contract.address`
+
+5. From there we can search for a
+
+`name = await contract.name()`
+
+`name`
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
