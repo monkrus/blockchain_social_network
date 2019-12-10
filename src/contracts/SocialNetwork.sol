@@ -7,6 +7,4 @@ constructor() public {
 	name = "Berlin forever";
 }
 
-
-
 }

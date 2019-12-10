@@ -37,6 +37,11 @@
 
 `name`
 
+## Tests
+
+1. Run `truffle test` .Please read the comments in the SocialNetwork.js file
+
+2.
 
 
 
