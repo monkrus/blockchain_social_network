@@ -2,6 +2,18 @@
 
 # dependencies
 /node_modules
+/node_modules/anymatch
+/node_modules/copy-concurrently
+/node_modules/csso
+/node_modules/fast-glob
+/node_modules/fork-ts-checker-webpack-plugin-alt
+/node_modules/http-proxy-middleware
+/node_modules/move-concurrently
+/node_modules/querystring
+/node_modules/readdirp
+/node_modules/sane
+/node_modules/timers-browserify
+/node_modules/webpack
 .idea
 /.pnp
 .pnp.js
