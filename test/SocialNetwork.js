@@ -36,12 +36,17 @@ assert.equal(name, 'Berlin forever')
 })
 
 describe('posts', async () => {
-
 let result, postCount
 
-it('creates posts' , async() => {	
+before(async () => {
 result =  await socialNetwork.createPost('This is my first post', {from: author})
 postCount = await socialNetwork.postCount()
+})
+
+
+
+it('creates posts' , async() => {	
+
 //SUCCESS
 assert.equal(postCount, 1)
 const event =  result.logs[0].args
@@ -54,7 +59,12 @@ assert.equal(event.author, author, 'author is correct')
 await socialNetwork.createPost('', {from: author}).should.be.rejected;
 })
 
-it(' lists posts' , async() => {	
+it(' lists posts' , async() => {
+const post = await socialNetwork.posts(postCount)	
+assert.equal(post.id.toNumber(), postCount.toNumber(), 'id is correct')
+assert.equal(post.content, 'This is my first post', 'content is correct')
+assert.equal(post.tipAmount, '0', 'tip amount is correct')
+assert.equal(post.author, author, 'author is correct')
 })
 
 it('allows users to tipper posts' , async() => {	

@@ -67,7 +67,7 @@ For almost all types, you cannot specify where they should be stored, because th
 
 
 
-tru
+
 
 
 
