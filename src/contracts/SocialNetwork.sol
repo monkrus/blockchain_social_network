@@ -44,7 +44,7 @@ contract SocialNetwork {
     function tipPost(uint _id) public payable {
         // Make sure the id is valid
         require(_id > 0 && _id <= postCount);
-        // Fetch the post
+        // Fetch the post from bockchain
         Post memory _post = posts[_id];
         // Fetch the author
         address payable _author = _post.author;
