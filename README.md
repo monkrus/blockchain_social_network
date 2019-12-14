@@ -55,7 +55,17 @@
 
 For almost all types, you cannot specify where they should be stored, because they are copied everytime they are used.
 
-4.
+4. Once all the tests are finished, run `truffle migrate --reset`
+Reset flag puts a new copy of the smart contract on the blockchain.
+
+
+## FRONTEND
+
+1. Run `npm run start`
+
+2. Import web3 `import Web3 from 'web3';`
+
+3. Run `npm install identicon.js --save`
 
 
 
